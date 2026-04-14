@@ -195,7 +195,7 @@ console.log(fullname);
 // Functions; 
 // Functions;These are reusable blocks of code that perform a specific task. they can take parameters and return values.
  // Function declaration// we use the function keyword to declare a function
-
+// In Functions, cant have two functions with the same name.
  function functionName() {
     // code to be executed
  }
@@ -233,7 +233,96 @@ function addNumbers(x, y) {
 const sum = addNumbers(4, 5);
 console.log(sum);
 
-//LOOPS
+
+//Arow functions
+// thesse are a more concise way of writing functions in Javascript.
+// They are often used for short, simple functions.
+
+// Traditional function expression
+const traditionalFunction = function() {
+    console.log("This is a traditional function");
+}
+traditionalFunction();
+
+function anotherTraditionalFunction() {
+    console.log("This is another traditional function");
+}
+anotherTraditionalFunction();
+
+// Arrow function expression
+const arrowFunction =  () => {
+    console.log("This is an arrow function");
+}
+arrowFunction();
+
+const add = (a,b) => {
+    console.log(a + b);
+}
+add(3,4);
+
+//JSON (Javascript Object Notation) 
+// This is a lightweight data-interchange format that is easy for humans to read and write, and easy for machines to parse and generate. It is often used for transmitting data in web applications.
+ 
+//Javascript object
+const task = {
+    id: 1,
+    title: "Complete Javascript assignment",
+    completed: false
+}
+console.log(task);
+
+// JSON string
+const taskJSON = JSON.stringify(task);
+   console.log(taskJSON);
+
+//Passing JSON string back to Javascript object
+const parseTask = JSON.parse(taskJSON);
+console.log(parseTask);
+
+//Local storage
+//storing data in local storage
+//stores data in pairs ie value name and its value.
+localStorage.setItem("Name", "Pride");
+localStorage.setItem("task", taskJSON);
+
+//Retrieving data from local storage
+const nameFromStorage = localStorage.getItem("Name");
+console.log("Name fron local storage: ", nameFromStorage);
+
+const taskFromStorage = localStorage.getItem("task");
+console.log(taskFromStorage);
+
+// *const parsenameFromStorage = JSON.parse(localStorage.getItem("Name"));
+// console.log(parsenameFromStorage);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
